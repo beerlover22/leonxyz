@@ -1,0 +1,74 @@
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*adding a black bg to the body to make things clearer*/
+body {background: black;}
+canvas {display: block;}
+
+#outerWrap {
+position: relative;
+    grid: 1;
+    
+     
+}
+
+ 
+
+.layer1 {
+    position: absolute;
+    opacity: 1;
+}
+
+ 
+
+.layer2 {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation: fade 5s;
+    opacity: .5;
+    
+    -webkit-animation: fade 5s;
+    -moz-animation: fade 5s;
+    -o-animation: fade 5s;
+    z-index: 0;
+}
+
+.layer2:hover {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    animation: fade 5s;
+    opacity: 1;
+    
+    -webkit-animation: fade 5s;
+    -moz-animation: fade 5s;
+    -o-animation: fade 5s;
+    z-index: 0;
+}
+
+@-webkit-keyframes fade{
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: .5;}
+}
+@-moz-keyframes fade{
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: .5;}
+}
+@-o-keyframes fade{
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: .5;}
+}
+@keyframes fade{
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: .5;}
+}
